@@ -25,7 +25,7 @@ struct ButtonView: View {
                     .frame(width: 23.54, height: 26)
             }
             if title == "Sign up free" {
-                NavigationLink(title, destination: SignUpView())
+                NavigationLink(title, destination: SearchView())
                     .foregroundStyle(color)
                     .fontWeight(.bold)
                     .padding(.vertical, 15)

@@ -46,6 +46,10 @@ class SignUpViewModel: ObservableObject {
         let email = elements[0].value.lowercased()
         let password = elements[1].value
         
+        Auth.auth().createUser(withEmail: email, password: password) {
+            authResult, error in print(authResult, error)
+        }
+        
         print(email, password)
     }
 }
